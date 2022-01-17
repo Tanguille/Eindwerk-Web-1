@@ -1,46 +1,62 @@
 @font-face {
-    font-family: Roboto;
-    src: url("fonts/Roboto-Medium.ttf") format("truetype");
+  font-family: Roboto;
+  src: url("fonts/Roboto-Medium.ttf") format("truetype");
 }
 
 body {
-    font-family: Roboto;
-    font-size: medium;
-    Text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  font-family: Roboto;
+  font-size: medium;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 {
-    padding-top: 20px;
+  padding-top: 20px;
 }
-
-ul {  
-   
-    
-}
-
 
 p {
-    Text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+pre {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  font-family: Roboto;
 }
 
 .navPhoto {
-    width: 75px;
-    height: auto;
-   
+  width: 75px;
+  height: auto;
 }
 
-.homepage{
-width: 25%;
-height: auto;
-padding: 20px 0 20px 0; 
+.homepage {
+  width: 25%;
+  height: auto;
+  padding: 20px 0 20px 0;
 }
 
 .text-muted {
-    color:212529; 
+  color: 212529;
 }
 
+.col-6 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 50%;
+  border: 2px solid;
+}
+
+.themed-grid-col {
+  padding-top: 0.75 rem;
+  padding-bottom: 0.75 rem;
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1 px solid rgba(86, 61, 124, 0.2);
+}
+/*# sourceMappingURL=styling.css.map */
