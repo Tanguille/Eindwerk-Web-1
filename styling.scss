@@ -22,12 +22,10 @@ p {
     width: 90%;
 }
 
-pre {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    font-family: Roboto;
+img {
+    width: 200px; 
+    height: 200px;
+    object-fit: scale-down;
 }
 
 .navPhoto {
@@ -57,3 +55,24 @@ pre {
     background-color: rgba(86, 61, 124, 0.15);
     border: 1 px solid rgba(86, 61, 124, 0.2);
 }
+
+.text-white{
+    text-decoration: none;
+}
+
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
+  }
+  .row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+
+ 
+
+
+
