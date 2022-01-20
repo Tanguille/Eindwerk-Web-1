@@ -50,6 +50,9 @@ img {
           flex: 0 0 auto;
   width: 50%;
   border: 2px solid;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .themed-grid-col {

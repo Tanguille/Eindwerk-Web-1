@@ -46,7 +46,8 @@ img {
 .col-6 {
     flex: 0 0 auto;
     width: 50%;
-    border: 2px solid;
+    border: 2px solid; 
+    justify-content:space-evenly;
 }
 
 .themed-grid-col {
