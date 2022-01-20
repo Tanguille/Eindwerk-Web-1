@@ -83,4 +83,10 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+.tile {
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+}
 /*# sourceMappingURL=styling.css.map */
