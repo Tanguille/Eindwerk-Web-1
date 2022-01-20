@@ -1,46 +1,128 @@
 @font-face {
-    font-family: Roboto;
-    src: url("fonts/Roboto-Medium.ttf") format("truetype");
+  font-family: Roboto;
+  src: url("fonts/Roboto-Medium.ttf") format("truetype");
 }
 
 body {
-    font-family: Roboto;
-    font-size: medium;
-    Text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  font-family: Roboto;
+  font-size: medium;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 {
-    padding-top: 20px;
+  padding-top: 20px;
 }
-
-ul {  
-   
-    
-}
-
 
 p {
-    Text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .navPhoto {
-    width: 75px;
-    height: auto;
-   
+  width: 75px;
+  height: auto;
 }
 
-.homepage{
-width: 25%;
-height: auto;
-padding: 20px 0 20px 0; 
+.homepage {
+  width: 25%;
+  height: auto;
+  padding: 20px 0 20px 0;
 }
 
 .text-muted {
-    color:212529; 
+  color: 212529;
 }
 
+.col-6 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 50%;
+  border: 2px solid;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.themed-grid-col {
+  padding-top: 0.75 rem;
+  padding-bottom: 0.75 rem;
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1 px solid rgba(86, 61, 124, 0.2);
+}
+
+.text-white {
+  text-decoration: none;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.row > [class*='col-'] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.centreer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*Toegevoegd want tiles waren verschillende grootte*/
+.text {
+  min-height: 23vh;
+  max-height: 23vh;
+}
+
+.text-skills {
+  min-height: 18vh;
+  max-height: 18vh;
+}
+
+/* Mobile Styles toegevoegd want dat zag er slecht uit met standaard bootstrap*/
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+
+/* Mobile Styles en tablet styles gecombineerd om grid layout niet te groot te maken als er meer horizontale plaats is voor tekst*/
+@media only screen and (max-width: 960px) {
+  .text {
+    min-height: 12vh;
+    max-height: 12vh;
+  }
+  .text-skills {
+    min-height: 10vh;
+    max-height: 10vh;
+  }
+}
+/*# sourceMappingURL=styling.css.map */
