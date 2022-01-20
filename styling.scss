@@ -73,19 +73,19 @@ img {
     display: flex;
     flex-direction: column;
   } 
+  .centreer{
+    align-items: center;
+    justify-content: center;
+}
   
   /*Toegevoegd want tiles waren verschillende grootte*/
   .text{
-    min-height: 25vh;
-    max-height: 25vh;
-  }
-  .text-experience{
-    min-height: 18vh;
-    max-height: 18vh;
+    min-height: 23vh;
+    max-height: 23vh; 
   }
   .text-skills{
-    min-height: 15vh;
-    max-height: 15vh;
+    min-height: 18vh;
+    max-height: 18vh;
   }
   
   /* Mobile Styles toegevoegd want dat zag er slecht uit met standaard bootstrap*/
@@ -97,7 +97,17 @@ img {
         font-size: 20px;
     }
   }
- 
+    /* Mobile Styles en tablet styles gecombineerd om grid layout niet te groot te maken als er meer horizontale plaats is voor tekst*/
+  @media only screen and (max-width: 960px) {
+    .text{
+        min-height: 12vh;
+        max-height: 12vh; 
+      }
+      .text-skills{
+        min-height: 10vh;
+        max-height: 10vh;
+      }
+    }
  
 
  
