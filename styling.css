@@ -95,8 +95,8 @@ img {
 
 /*Toegevoegd want tiles waren verschillende grootte*/
 .text {
-  min-height: 23vh;
-  max-height: 23vh;
+  min-height: 25vh;
+  max-height: 25vh;
 }
 
 .text-skills {
@@ -107,7 +107,7 @@ img {
 /* Mobile Styles toegevoegd want dat zag er slecht uit met standaard bootstrap*/
 @media only screen and (max-width: 400px) {
   body {
-    font-size: 11px;
+    font-size: 12px;
   }
   h2 {
     font-size: 20px;
